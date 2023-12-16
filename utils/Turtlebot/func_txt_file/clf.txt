@@ -1,0 +1,2 @@
+def clf(self, x):
+	return [(-self.ctrl_input.P_goal[0] + 0.02*self.params.v*cos(x[2]) + x[0])**2 + (-self.ctrl_input.P_goal[1] + 0.02*self.params.v*sin(x[2]) + x[1])**2]

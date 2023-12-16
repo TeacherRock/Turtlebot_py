@@ -1,0 +1,2 @@
+def f(self, x):
+	return np.array([[self.params.v*cos(x[2])], [self.params.v*sin(x[2])], [0]])

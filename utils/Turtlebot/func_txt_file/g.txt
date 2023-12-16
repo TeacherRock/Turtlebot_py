@@ -1,0 +1,2 @@
+def g(self, x):
+	return np.array([[0], [0], [1]])

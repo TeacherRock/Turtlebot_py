@@ -1,0 +1,2 @@
+def dclf(self, x):
+	return np.array([[-2*self.ctrl_input.P_goal[0] + 0.04*self.params.v*cos(x[2]) + 2*x[0], -2*self.ctrl_input.P_goal[1] + 0.04*self.params.v*sin(x[2]) + 2*x[1], -0.04*self.params.v*(-self.ctrl_input.P_goal[0] + 0.02*self.params.v*cos(x[2]) + x[0])*sin(x[2]) + 0.04*self.params.v*(-self.ctrl_input.P_goal[1] + 0.02*self.params.v*sin(x[2]) + x[1])*cos(x[2])]])
